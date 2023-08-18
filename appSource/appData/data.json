@@ -1,0 +1,758 @@
+[
+    {
+        "c_byt": 1,
+        "uzivatele": "Holoubek Lukáš a Holoubková Aneta",
+        "vymera": 74,
+        "zastup": 6
+    },
+    {
+        "c_byt": 2,
+        "uzivatele": "BIDLI PRAHA 3, bytové družstvo",
+        "vymera": 46,
+        "zastup": 6
+    },
+    {
+        "c_byt": 3,
+        "uzivatele": "Vascauteanu Renado",
+        "vymera": 74,
+        "zastup": 6
+    },
+    {
+        "c_byt": 4,
+        "uzivatele": "Ing. Sedláček Stanislav",
+        "vymera": 46,
+        "zastup": 6
+    },
+    {
+        "c_byt": 5,
+        "uzivatele": "Ing. Buchtová Hana",
+        "vymera": 73,
+        "zastup": 6
+    },
+    {
+        "c_byt": 6,
+        "uzivatele": "Stavební bytové družstvo POKRO",
+        "vymera": 73,
+        "zastup": 1
+    },
+    {
+        "c_byt": 7,
+        "uzivatele": "Škodová Kateřina",
+        "vymera": 46,
+        "zastup": 6
+    },
+    {
+        "c_byt": 8,
+        "uzivatele": "Ing. Sedlář Miroslav a Ing. Sedlářová Ivona, Ph.D.",
+        "vymera": 74,
+        "zastup": 6
+    },
+    {
+        "c_byt": 9,
+        "uzivatele": "Škvor Michal a Škvorová Petra",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 10,
+        "uzivatele": "Svobodová Petra",
+        "vymera": 45,
+        "zastup": 6
+    },
+    {
+        "c_byt": 11,
+        "uzivatele": "Ing. Votava František a Ing. Votavová Irena",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 12,
+        "uzivatele": "Satklichov Azat a Kurbanova Enejan",
+        "vymera": 74,
+        "zastup": 6
+    },
+    {
+        "c_byt": 13,
+        "uzivatele": "Jelínková Eva",
+        "vymera": 46,
+        "zastup": 6
+    },
+    {
+        "c_byt": 14,
+        "uzivatele": "Ing. Králová Věra",
+        "vymera": 73,
+        "zastup": 6
+    },
+    {
+        "c_byt": 15,
+        "uzivatele": "Ing. Bureš Zdeněk a Burešová Hana",
+        "vymera": 73,
+        "zastup": 6
+    },
+    {
+        "c_byt": 16,
+        "uzivatele": "Mäsiarová Eva a Mäsiar Ĺubomír",
+        "vymera": 46,
+        "zastup": 6
+    },
+    {
+        "c_byt": 17,
+        "uzivatele": "Ing. Koreš Jakub",
+        "vymera": 73,
+        "zastup": 6
+    },
+    {
+        "c_byt": 18,
+        "uzivatele": "Vojíková Romana",
+        "vymera": 74,
+        "zastup": 6
+    },
+    {
+        "c_byt": 19,
+        "uzivatele": "Ing. Haškovec Petr a Mgr. Haškovcová Jana",
+        "vymera": 45,
+        "zastup": 6
+    },
+    {
+        "c_byt": 20,
+        "uzivatele": "Turková Věra a Turek Lukáš",
+        "vymera": 73,
+        "zastup": 6
+    },
+    {
+        "c_byt": 21,
+        "uzivatele": "Staník Vladan a Staníková Jana",
+        "vymera": 73,
+        "zastup": 2
+    },
+    {
+        "c_byt": 22,
+        "uzivatele": "Ing. Bican Jaroslav a MUDr. Bicanová Alena",
+        "vymera": 45,
+        "zastup": 2
+    },
+    {
+        "c_byt": 23,
+        "uzivatele": "Ing. Terber Radomír a Chuchmová Anna",
+        "vymera": 74,
+        "zastup": 6
+    },
+    {
+        "c_byt": 24,
+        "uzivatele": "Holoubek Lukáš a Holoubková Aneta",
+        "vymera": 46,
+        "zastup": 6
+    },
+    {
+        "c_byt": 25,
+        "uzivatele": "Ing. Šupšak Pavol a Šupšaková Ľudmila",
+        "vymera": 74,
+        "zastup": 6
+    },
+    {
+        "c_byt": 26,
+        "uzivatele": "Marek Jiří",
+        "vymera": 74,
+        "zastup": 6
+    },
+    {
+        "c_byt": 27,
+        "uzivatele": "Tengler Miloš a Tenglerová Martina",
+        "vymera": 45,
+        "zastup": 6
+    },
+    {
+        "c_byt": 28,
+        "uzivatele": "Ing. Borský Vratislav",
+        "vymera": 74,
+        "zastup": 6
+    },
+    {
+        "c_byt": 29,
+        "uzivatele": "Ing. Tocauer David a Tocauerová Kateřina",
+        "vymera": 74,
+        "zastup": 6
+    },
+    {
+        "c_byt": 30,
+        "uzivatele": "MUDr. Pišoftová Marcela",
+        "vymera": 45,
+        "zastup": 2
+    },
+    {
+        "c_byt": 31,
+        "uzivatele": "Hanuš Miroslav a Hanušová Květoslava",
+        "vymera": 73,
+        "zastup": 2
+    },
+    {
+        "c_byt": 32,
+        "uzivatele": "Kiyanitsa Petro a Kiyanitsa Natalia",
+        "vymera": 73,
+        "zastup": 0
+    },
+    {
+        "c_byt": 33,
+        "uzivatele": "Bc. Klimešová Alexandra",
+        "vymera": 46,
+        "zastup": 6
+    },
+    {
+        "c_byt": 34,
+        "uzivatele": "Dolejší Kateřina",
+        "vymera": 73,
+        "zastup": 6
+    },
+    {
+        "c_byt": 35,
+        "uzivatele": "Stavební bytové družstvo POKRO",
+        "vymera": 74,
+        "zastup": 1
+    },
+    {
+        "c_byt": 36,
+        "uzivatele": "Špatz Petr",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 37,
+        "uzivatele": "Hlaváčková Gabriela a Hlaváček Jiří",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 38,
+        "uzivatele": "Černá Jarmila",
+        "vymera": 73,
+        "zastup": 0
+    },
+    {
+        "c_byt": 39,
+        "uzivatele": "Vojtěch Adam",
+        "vymera": 45,
+        "zastup": 0
+    },
+    {
+        "c_byt": 40,
+        "uzivatele": "JUDr. Moník Petr, LL.M",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 41,
+        "uzivatele": "Kořínek Stanislav a Kořínková Jitka",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 42,
+        "uzivatele": "Charamzová Alena",
+        "vymera": 46,
+        "zastup": 2
+    },
+    {
+        "c_byt": 43,
+        "uzivatele": "Arabaszová Edita",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 44,
+        "uzivatele": "Kadlecová Zuzana a Perout Dušan",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 45,
+        "uzivatele": "Kopřivová Alena",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 46,
+        "uzivatele": "Vrabec Jiří",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 47,
+        "uzivatele": "Stavební bytové družstvo POKRO",
+        "vymera": 74,
+        "zastup": 1
+    },
+    {
+        "c_byt": 48,
+        "uzivatele": "Sochor Milan a Ing. Sochorová Stanislava",
+        "vymera": 45,
+        "zastup": 0
+    },
+    {
+        "c_byt": 49,
+        "uzivatele": "Zatloukalová Gabriela",
+        "vymera": 79,
+        "zastup": 0
+    },
+    {
+        "c_byt": 50,
+        "uzivatele": "Ing. Wurmová Ivana",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 51,
+        "uzivatele": "Hlaváček Petr",
+        "vymera": 44,
+        "zastup": 2
+    },
+    {
+        "c_byt": 52,
+        "uzivatele": "Stavební bytové družstvo POKRO",
+        "vymera": 45,
+        "zastup": 1
+    },
+    {
+        "c_byt": 53,
+        "uzivatele": "BcA. Micka Michal, Dis. a Mgr. Micková Lenka",
+        "vymera": 79,
+        "zastup": 2
+    },
+    {
+        "c_byt": 54,
+        "uzivatele": "PhDr. Janištinová Anna",
+        "vymera": 77,
+        "zastup": 0
+    },
+    {
+        "c_byt": 55,
+        "uzivatele": "Navrátilová Hana",
+        "vymera": 72,
+        "zastup": 0
+    },
+    {
+        "c_byt": 56,
+        "uzivatele": "Stehlíková Martina",
+        "vymera": 45,
+        "zastup": 0
+    },
+    {
+        "c_byt": 57,
+        "uzivatele": "Dawson Karel",
+        "vymera": 45,
+        "zastup": 0
+    },
+    {
+        "c_byt": 58,
+        "uzivatele": "Ing. Novák Martin",
+        "vymera": 79,
+        "zastup": 2
+    },
+    {
+        "c_byt": 59,
+        "uzivatele": "Ing. Králová Věra",
+        "vymera": 77,
+        "zastup": 0
+    },
+    {
+        "c_byt": 60,
+        "uzivatele": "Karbaš Jiří a Karbašová Eva",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 61,
+        "uzivatele": "PhDr. Věříšová Jaroslava",
+        "vymera": 44,
+        "zastup": 2
+    },
+    {
+        "c_byt": 62,
+        "uzivatele": "Ročková Eva",
+        "vymera": 45,
+        "zastup": 2
+    },
+    {
+        "c_byt": 63,
+        "uzivatele": "Flégr Jiří",
+        "vymera": 79,
+        "zastup": 2
+    },
+    {
+        "c_byt": 64,
+        "uzivatele": "Ing. Čandová Zuzana",
+        "vymera": 77,
+        "zastup": 0
+    },
+    {
+        "c_byt": 65,
+        "uzivatele": "Havlíček František a Havlíčková Simona",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 66,
+        "uzivatele": "Ing. Dastychová Stephanie",
+        "vymera": 44,
+        "zastup": 2
+    },
+    {
+        "c_byt": 67,
+        "uzivatele": "Kubíková Helena",
+        "vymera": 45,
+        "zastup": 0
+    },
+    {
+        "c_byt": 68,
+        "uzivatele": "Stavební bytové družstvo POKRO",
+        "vymera": 79,
+        "zastup": 1
+    },
+    {
+        "c_byt": 69,
+        "uzivatele": "Ing. Zajc Dušanka",
+        "vymera": 77,
+        "zastup": 2
+    },
+    {
+        "c_byt": 70,
+        "uzivatele": "Ing. Tahtahová Blanka a Ing. Tahtah Wafic",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 71,
+        "uzivatele": "Kreklová Hana",
+        "vymera": 45,
+        "zastup": 0
+    },
+    {
+        "c_byt": 72,
+        "uzivatele": "Mgr. Vytlačilová Marcela",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 73,
+        "uzivatele": "Tichavská Romana a Tichavský Mario",
+        "vymera": 79,
+        "zastup": 0
+    },
+    {
+        "c_byt": 74,
+        "uzivatele": "Bečková Lenka",
+        "vymera": 77,
+        "zastup": 0
+    },
+    {
+        "c_byt": 75,
+        "uzivatele": "SIMPRE s.r.o.",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 76,
+        "uzivatele": "Brožová Jaroslava",
+        "vymera": 45,
+        "zastup": 2
+    },
+    {
+        "c_byt": 77,
+        "uzivatele": "Bobvošová Elisabeta",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 78,
+        "uzivatele": "Ing. Navrátil Václav, CSc. a Ing. Navrátilová Ludmila",
+        "vymera": 78,
+        "zastup": 0
+    },
+    {
+        "c_byt": 79,
+        "uzivatele": "RNDr. Turcaj Pavel, Ph.D.",
+        "vymera": 77,
+        "zastup": 0
+    },
+    {
+        "c_byt": 80,
+        "uzivatele": "Míka Stanislav a Míková Eva",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 81,
+        "uzivatele": "Ing. Kubricht Pavel",
+        "vymera": 45,
+        "zastup": 0
+    },
+    {
+        "c_byt": 82,
+        "uzivatele": "Wernerová Markéta",
+        "vymera": 46,
+        "zastup": 2
+    },
+    {
+        "c_byt": 83,
+        "uzivatele": "Stavební bytové družstvo POKRO",
+        "vymera": 79,
+        "zastup": 1
+    },
+    {
+        "c_byt": 84,
+        "uzivatele": "MgA. Schmidt Otakar",
+        "vymera": 77,
+        "zastup": 0
+    },
+    {
+        "c_byt": 85,
+        "uzivatele": "Matulík Jiří a Mgr. Matulíková Lucie",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 86,
+        "uzivatele": "Mgr. Jermanová Iva",
+        "vymera": 45,
+        "zastup": 0
+    },
+    {
+        "c_byt": 87,
+        "uzivatele": "Šimková Jaroslava",
+        "vymera": 33,
+        "zastup": 0
+    },
+    {
+        "c_byt": 88,
+        "uzivatele": "Šatopletová Ivana",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 89,
+        "uzivatele": "Ing. Hanovská Pavlína",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 90,
+        "uzivatele": "Jonášová Martina a Ing. Jonáš Jan",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 91,
+        "uzivatele": "Kopecká Irena",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 92,
+        "uzivatele": "Procházková Kristýna",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 93,
+        "uzivatele": "Švajdová Fafková Hana",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 94,
+        "uzivatele": "Vlk Jindřich a Vlková Jana",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 95,
+        "uzivatele": "Ing. Ježková Věra",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 96,
+        "uzivatele": "Mgr. Kubásková Eva a RNDr. Boštíková Vanda",
+        "vymera": 73,
+        "zastup": 0
+    },
+    {
+        "c_byt": 97,
+        "uzivatele": "Ing. Čtveráková Hana",
+        "vymera": 73,
+        "zastup": 0
+    },
+    {
+        "c_byt": 98,
+        "uzivatele": "JUDr. Kopečný Jan",
+        "vymera": 46,
+        "zastup": 2
+    },
+    {
+        "c_byt": 99,
+        "uzivatele": "Bc. Linhart Tomáš a MDDr. Linhartová Eva",
+        "vymera": 73,
+        "zastup": 0
+    },
+    {
+        "c_byt": 100,
+        "uzivatele": "Zacharová Hana a Zachar Gabriel",
+        "vymera": 73,
+        "zastup": 0
+    },
+    {
+        "c_byt": 101,
+        "uzivatele": "Fojtíková Kateřina",
+        "vymera": 45,
+        "zastup": 2
+    },
+    {
+        "c_byt": 102,
+        "uzivatele": "Machoňová Olga",
+        "vymera": 73,
+        "zastup": 2
+    },
+    {
+        "c_byt": 103,
+        "uzivatele": "Ing. Souček Michael a Ing. Součková Eva",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 104,
+        "uzivatele": "Stavební bytové družstvo POKRO",
+        "vymera": 46,
+        "zastup": 1
+    },
+    {
+        "c_byt": 105,
+        "uzivatele": "Tauchenová Vlasta",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 106,
+        "uzivatele": "Stavební bytové družstvo POKRO",
+        "vymera": 33,
+        "zastup": 1
+    },
+    {
+        "c_byt": 107,
+        "uzivatele": "Kučera Tomáš",
+        "vymera": 45,
+        "zastup": 2
+    },
+    {
+        "c_byt": 108,
+        "uzivatele": "Kemza Jakub a Kemzová Kristýna",
+        "vymera": 73,
+        "zastup": 0
+    },
+    {
+        "c_byt": 109,
+        "uzivatele": "Drábek Tomáš",
+        "vymera": 73,
+        "zastup": 0
+    },
+    {
+        "c_byt": 110,
+        "uzivatele": "Ing. Tahtahová Blanka a Ing. Tahtah Wafic",
+        "vymera": 46,
+        "zastup": 2
+    },
+    {
+        "c_byt": 111,
+        "uzivatele": "Ing. Cé Michal a Ing. Céová Dana",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 112,
+        "uzivatele": "Prchalová Alena a Prchal Michal",
+        "vymera": 73,
+        "zastup": 0
+    },
+    {
+        "c_byt": 113,
+        "uzivatele": "Faktor Jindřich a Faktorová Anna",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 114,
+        "uzivatele": "Mašková Michaela",
+        "vymera": 73,
+        "zastup": 0
+    },
+    {
+        "c_byt": 115,
+        "uzivatele": "MUDr. Švihovec Petr a Švihovcová Markéta",
+        "vymera": 73,
+        "zastup": 2
+    },
+    {
+        "c_byt": 116,
+        "uzivatele": "Erben Pavel a Mgr. Erbenová Eva",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 117,
+        "uzivatele": "Jahoda Petr a Jahodová Veronika",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 118,
+        "uzivatele": "Myslivec Martin",
+        "vymera": 74,
+        "zastup": 0
+    },
+    {
+        "c_byt": 119,
+        "uzivatele": "Ing. Céová Dana a Ing. Cé Michal",
+        "vymera": 49,
+        "zastup": 0
+    },
+    {
+        "c_byt": 120,
+        "uzivatele": "Stavební bytové družstvo POKRO",
+        "vymera": 74,
+        "zastup": 1
+    },
+    {
+        "c_byt": 121,
+        "uzivatele": "Ing. Klimeš Miroslav",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 122,
+        "uzivatele": "Vykopalová Eva",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 123,
+        "uzivatele": "Provazníková Jitka",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 124,
+        "uzivatele": "Sladomelová Helena",
+        "vymera": 74,
+        "zastup": 2
+    },
+    {
+        "c_byt": 125,
+        "uzivatele": "Mgr. Suchomel Tomáš",
+        "vymera": 46,
+        "zastup": 0
+    },
+    {
+        "c_byt": 126,
+        "uzivatele": "Ing. Plíhalová Helena",
+        "vymera": 74,
+        "zastup": 0
+    }
+]

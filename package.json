@@ -1,0 +1,12 @@
+{
+  "name": "vybor",
+  "version": "1.0.0",
+  "description": "vybor hlasovani",
+  "main": "appSource/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MC",
+  "license": "ISC"
+}
