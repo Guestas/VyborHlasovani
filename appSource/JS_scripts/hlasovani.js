@@ -15,26 +15,89 @@ console.log(hlasl, hlasll, hlaslll, data_hlasovani, hlast)
 
 document.querySelectorAll('.hlasovll').forEach(item => {
   hlasll[0][item.id] = item
+  item.innerText = ""
 })
 
 document.querySelectorAll('.hlasovl').forEach(item => {
   hlasl[0][item.id] = item
+  item.innerText = ""
 })
 
 document.querySelectorAll('.hlasovlll').forEach(item => {
   hlaslll[0][item.id] = item
 })
 
+
+function updateValues(){
+  zh.forEach(x=>console.log(x.value, zastoupeni[x.id[1]-1]))
+  p1 = getNamesHlas(data_hlasovani[0]["pro"])[1]
+  p2 = getNamesHlas(data_hlasovani[0]["proti"])[1]
+  p3 = getNamesHlas(data_hlasovani[0]["zdrzeni"])[1]
+  zh.forEach(x=>{
+    if (x.value=="pro"){
+      p1 += zastoupeni[x.id[1]-1]
+    }
+    else if (x.value == "proti"){
+      p2 += zastoupeni[x.id[1]-1]
+    }
+    else if (x.value == "zdrzeni"){
+      p3 += zastoupeni[x.id[1]-1]
+    }
+  })
+  hlaslll[0]["lllpro"].innerText = "Přítomných:"+p1+"/"+usnasenipritomnych+"="+Math.round(p1/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+p1+"/"+usnasenisch+"="+Math.round(p1/usnasenisch*10000,4)/100+"%"
+  hlaslll[0]["lllproti"].innerText = "Přítomných:"+p2+"/"+usnasenipritomnych+"="+Math.round(p2/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+p2+"/"+usnasenisch+"="+Math.round(p2/usnasenisch*10000,4)/100+"%"
+  hlaslll[0]["lllzdrzeni"].innerText = "Přítomných:"+p3+"/"+usnasenipritomnych+"="+Math.round(p3/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+p3+"/"+usnasenisch+"="+Math.round(p3/usnasenisch*10000,4)/100+"%"
+}
+
 document.querySelectorAll('[name="hlasovt"]').forEach(item => {
   hlast[0][item.id] = item
 })
+
+
+i=0
+document.querySelectorAll('.zastupy').forEach(item => {
+  item.innerText = zastupy[i]
+  i++
+})
+
+var zh = []// class="lab"
+document.querySelectorAll('[name="combo"]').forEach(item =>{
+  zh.push(item)
+})
+
+
+document.querySelectorAll('.butons').forEach(item =>{
+  item.addEventListener('click', event => {
+    //console.log(item.id, pritomni, data_hlasovani)
+    pritomni.forEach(p=>{
+      pridani(data_hlasovani[0][item.id], hlasll[0]["ll"+item.id], hlast[0]["t"+item.id], "Enter", p, hlaslll[0]["lll"+item.id],)
+    })
+    updateValues()
+  })
+})
+document.querySelectorAll('.dell').forEach(item =>{
+  item.addEventListener('click', event => {
+    //console.log(item.id, pritomni, data_hlasovani)
+    data_hlasovani[0][item.id] = []
+    p1 = getNamesHlas(data_hlasovani[0][item.id])
+    hlast[0]["t"+item.id].innerText = p1[0]
+    hlast[0]["t"+item.id].scrollTop = hlast[0]["t"+item.id].scrollHeight;
+    
+    updateValues()
+    console.log(getNamesHlas(data_hlasovani[0]["pro"]),getNamesHlas(data_hlasovani[0]["proti"]),getNamesHlas(data_hlasovani[0]["zdrzeni"]))
+    //hodn.innerText = "Přítomných:"+p1[1]+"/"+usnasenipritomnych+"="+Math.round(p1[1]/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+p1[1]+"/"+usnasenisch+"="+Math.round(p1[1]/usnasenisch*10000,4)/100+"%"
+    //hlaslll[0]["lllpro"].innerText = "Přítomných:"+0+"/"+usnasenipritomnych+"="+Math.round(0/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+0+"/"+usnasenisch+"="+Math.round(0/usnasenisch*10000,4)/100+"%"
+  
+  })
+})
+
 
 
 //button
 const butte = document.getElementById('buttonX')
 
 butte.addEventListener('click', function(event) {
-  console.log(data_hlasovani)
+  updateValues()
 })
 
 /* 
@@ -107,9 +170,8 @@ function pridani(dataarr, labl, tex, key, val, hodn){
       p1 = getNamesHlas(dataarr)
       tex.innerText = p1[0]
       tex.scrollTop = tex.scrollHeight;
-      //console.log(p1[1])
-      hodn.innerText = "Přítomných:"+p1[1]+"/"+usnasenipritomnych+"="+Math.round(p1[1]/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+p1[1]+"/"+usnasenisch+"="+Math.round(p1[1]/usnasenisch*10000,4)/100+"%"
-    }
+      updateValues()
+      }
     else{
       console.log("Nepřítomni nebo mimo rozsah")
     }
@@ -138,39 +200,9 @@ document.querySelectorAll('.hlasov').forEach(item => {
     if (event.key == "a" || event.key == "Enter" || event.key == "d"){
       pridani(data_hlasovani[0][item.id], hlasll[0]["ll"+item.id], hlast[0]["t"+item.id], event.key, item.value, hlaslll[0]["lll"+item.id],)
       item.value=""
-      console.log(data_hlasovani, pritomni)
+      //console.log(data_hlasovani, pritomni)
       //data array, label, textbox, key, value
     }
   })
 })
 
-
-
-const optionsData = [
-  { value: 'Pro', label: 'Pro' },
-  { value: 'Proti', label: 'Proti' },
-  { value: 'Zdrželi', label: 'Zdrželi' }
-];
-
-// Get a reference to the target div
-const hlasovaniDiv = document.getElementById('zastupyHlas');
-
-// Create a label element
-const labelElement = document.createElement('label');
-labelElement.textContent = 'NaN';
-labelElement.className = 'zastupy';
-hlasovaniDiv.appendChild(labelElement);
-
-// Create a select element
-const selectElement = document.createElement('select');
-selectElement.name = 'Zastup hlas';
-selectElement.id = 'z1';
-hlasovaniDiv.appendChild(selectElement);
-
-// Populate the select element with options
-optionsData.forEach(option => {
-  const optionElement = document.createElement('option');
-  optionElement.value = option.value;
-  optionElement.textContent = option.label;
-  selectElement.appendChild(optionElement);
-});

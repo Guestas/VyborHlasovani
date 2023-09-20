@@ -22,13 +22,21 @@
         margin: 10px;
     }
 
+
     .float-container {
         height: 440px;
         padding: 10px;
-        width: 835px;
+        width: 830px;
         background-color: black;
+        overflow: hidden;
     }
-    
+
+    .pritomnost {
+        overflow: hidden;
+    }
+    div{
+        overflow: hidden;
+    }
 
     .float-container2 {
         height: 630px;
@@ -44,6 +52,7 @@
         background-color: white;
         color: black;
         padding: 5px;
+        overflow: auto;
     } 
     
     .float-child1 {
@@ -62,6 +71,19 @@
     button{
         cursor: pointer;
         text-align: left;
+    }
+
+    .zastupy{
+        padding-left: 20px;
+    }
+
+    .combosub{
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+
+    #buttonX{
+        margin-left: 20px;
     }
 
 

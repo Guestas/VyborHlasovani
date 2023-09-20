@@ -5,8 +5,25 @@
   "main": "appSource/main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "distW": "electron-builder --win",
+    "distA": "electron-builder --mac",
+    "distL": "electron-builder --linux snap"
   },
-  "author": "MC",
-  "license": "ISC"
+  "files": [
+    "appSource/**/*"
+  ],
+  "build": {
+    "appId": "com.MCVyborVote.app",
+    "productName": "Vybor vote",
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "author": "Martin Cé",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.2.1",
+    "electron-builder": "^24.6.4"
+  }
 }

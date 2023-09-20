@@ -2,7 +2,13 @@ const {app, BrowserWindow, ipcMain, dialog, Menu} = require('electron')
 const path = require('path')
 var fs = require('fs')
 
+/*
+  install like dev electron
+  npm install electron --save-dev
 
+  without devs:
+  npm install electron
+*/ 
 
 let mainWindow
 

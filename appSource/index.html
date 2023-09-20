@@ -43,14 +43,12 @@
     </div>
     
     <div id="hlasovani">
-      <div id="zastupyHlas">
-        <!-- Content will be dynamically generated here -->
-      </div>
       
         <div class="float-container2">
           <div class="float-child1">
             <p>
-              <button type="button" id="proo" class="butons">Load</button>  
+              <button type="button" id="pro" class="dell">Del</button>
+              <button type="button" id="pro" class="butons">Load</button>  
               Pro: 
               <input type="number"  id="pro" class="hlasov">
               <label id="llpro" class="hlasovll">a</label>
@@ -59,7 +57,8 @@
             <label id="lllpro" class="hlasovlll">a</label></div>
           <div class="float-child1">
             <p>
-              <button type="button" id="proo" class="butons">Load</button>
+              <button type="button" id="proti" class="dell">Del</button>
+              <button type="button" id="proti" class="butons">Load</button>
               Proti: 
               <input type="number"  id="proti" class="hlasov">
               <label id="llproti" class="hlasovll">a</label>
@@ -68,7 +67,8 @@
             <label id="lllproti" class="hlasovlll">a</label></div>
           <div class="float-child1">
             <p>
-              <button type="button" id="proo" class="butons">Load</button>
+              <button type="button" id="zdrzeni" class="dell">Del</button>
+              <button type="button" id="zdrzeni" class="butons">Load</button>
               Zdrzeni:  
               <input type="number" id="zdrzeni" class="hlasov">
               <label id="llzdrzeni" class="hlasovll">a</label>
@@ -80,10 +80,39 @@
           <div class="float-child" id="tzdrzeni" name="hlasovt"></div>
         </div>
         <label id="z1" class="zastupy">NaN</label>
-        <select name="cars" id="z1">
-          <option value="Pro">Pro</option>
-          <option value="Proti">Proti</option>
-          <option value="Zdrželi">Zdrželi</option>
+        <select name="combo" id="z1">
+          <option value="--">--</option>
+          <option value="pro">Pro</option>
+          <option value="proti">Proti</option>
+          <option value="zdrzeli">Zdrželi</option>
+        </select>
+        <label id="z2" class="zastupy">NaN</label>
+        <select name="combo" id="z2">
+          <option value="--">--</option>
+          <option value="pro">Pro</option>
+          <option value="proti">Proti</option>
+          <option value="zdrzeli">Zdrželi</option>
+        </select>
+        <label id="z3" class="zastupy">NaN</label>
+        <select name="combo" id="z3">
+          <option value="--">--</option>
+          <option value="pro">Pro</option>
+          <option value="proti">Proti</option>
+          <option value="zdrzeli">Zdrželi</option>
+        </select>
+        <label id="z4" class="zastupy">NaN</label>
+        <select name="combo" id="z4">
+          <option value="--">--</option>
+          <option value="pro">Pro</option>
+          <option value="proti">Proti</option>
+          <option value="Zdrzeli">Zdrželi</option>
+        </select>
+        <label id="z5" class="zastupy">NaN</label>
+        <select name="combo" id="z5" >
+          <option value="--">--</option>
+          <option value="pro">Pro</option>
+          <option value="proti">Proti</option>
+          <option value="zdrzeli">Zdrželi</option>
         </select>
         <button type="button" id="buttonX">Load</button>
         <script src="./JS_scripts/hlasovani.js"></script>

@@ -19,6 +19,7 @@ var z = []// class="lab"
 document.querySelectorAll('.lab').forEach(item => {
   z.push(item)
 })
+
 //checkboxs
 document.querySelectorAll('.check').forEach(item => {
   item.addEventListener('click', event => {
@@ -89,6 +90,7 @@ window.api.send("toMain_jslo")
         element.innerText = zastupy[i]
         i++
       });
+
       uzivatelevypis.innerText = jsonToTxt(bytyInfo)
       uzivateleprit.innerText = getNames(pritomni)
       uzivateleprit.scrollTop = uzivateleprit.scrollHeight;
