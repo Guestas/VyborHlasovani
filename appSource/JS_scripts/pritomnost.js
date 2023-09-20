@@ -51,9 +51,10 @@ che = [false, false, false, false, false]
 
 window.api.send("toMain_jslo")
   window.api.receive("fromMain_jslo", (data) => {
-      bytyInfo = data
+      zastupy = data.zastupy
+      bytyInfo = data.byty
       usnasenisch = 0
-      data.forEach(element => {
+      bytyInfo.forEach(element => {
         usnasenisch += element.vymera
         if (element.zastup != 0){
             if (element.zastup==1) {
@@ -85,9 +86,10 @@ window.api.send("toMain_jslo")
       zb = [zastoupeni1, zastoupeni2, zastoupeni3, zastoupeni4, zastoupeni5]
       z.forEach(element => {
         z[i].innerText += " - hodnota: " + zastoupeni[i] + " počet bytů: " + zb[i].length
+        element.innerText = zastupy[i]
         i++
       });
-      uzivatelevypis.innerText = jsonToTxt(data)
+      uzivatelevypis.innerText = jsonToTxt(bytyInfo)
       uzivateleprit.innerText = getNames(pritomni)
       uzivateleprit.scrollTop = uzivateleprit.scrollHeight;
     }

@@ -24,53 +24,18 @@
 
       <div>
         <input type="checkbox" id="zastup0" name="checks" class="check">
-        <label id="z1" class="lab"> Pokrok </label><br>
+        <label id="z1" class="lab"> NaN </label>
         <input type="checkbox" id="zastup1" name="checks"  class="check">
-        <label id="z2" class="lab"> Zuzana </label><br>
+        <label id="z2" class="lab"> NaN </label>
         <input type="checkbox" id="zastup2" name="checks"  class="check">
-        <label id="z3" class="lab"> Dana </label><br>
+        <label id="z3" class="lab"> NaN </label>
         <input type="checkbox" id="zastup3" name="checks"  class="check">
-        <label id="z4" class="lab"> Vladan </label><br>
+        <label id="z4" class="lab"> NaN </label>
         <input type="checkbox" id="zastup4" name="checks"  class="check">
-        <label id="z5" class="lab"> Zastup 5 </label><br>
+        <label id="z5" class="lab"> NaN </label>
       </div>
   
       <button type="button" id="load">Load</button>
-
-
-
-
-
-      <table id="myTable">
-      <thead>
-        <tr>
-          <th id="sort0" class="tab">ID</th>
-          <th id="sort1" class="tab">Jméno</th>
-          <th id="sort2" class="tab">Stav</th>
-          <th id="sort3" class="tab">Color</th>
-          <th id="sort4" class="tab">Period</th>
-          <th id="sort5" class="tab">Coordinates</th>
-          <th id="sort6" class="tab">Worker</th>
-          <th id="sort7" class="tab">Runing</th>
-        </tr>
-
-      </thead>
-
-      </table>
-      <button id="remove-all-rows-button">Remove Cell</button>
-
-
-        <!-- Context menu -->
-        <div id="context-menu" class="context-menu">
-          <ul>
-            <li id="dropdown1" class="dropdown">Pause/Start</li>
-            <li id="dropdown2" class="dropdown">Delete</li>
-            <li id="dropdown3" class="dropdown">Hide in graph</li>
-          </ul>
-        </div>
-
-
-        <script src="./JS_scripts/tab.js"></script>
 
 
 
@@ -78,29 +43,48 @@
     </div>
     
     <div id="hlasovani">
-      <select name="cars" id="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="opel">Opel</option>
-        <option value="audi">Audi</option>
-      </select>
+      <div id="zastupyHlas">
+        <!-- Content will be dynamically generated here -->
+      </div>
+      
         <div class="float-container2">
           <div class="float-child1">
-            <p><button type="button" id="proo" class="butons">Load</button>  Pro: <input type="number"  id="pro" class="hlasov"><label id="llpro" class="hlasovll">a</label></p><br>
+            <p>
+              <button type="button" id="proo" class="butons">Load</button>  
+              Pro: 
+              <input type="number"  id="pro" class="hlasov">
+              <label id="llpro" class="hlasovll">a</label>
+            </p><br>
             <label id="lpro" class="hlasovl">a</label><br>
             <label id="lllpro" class="hlasovlll">a</label></div>
           <div class="float-child1">
-            <p><button type="button" id="proo" class="butons">Load</button>  Proti: <input type="number"  id="proti" class="hlasov"><label id="llproti" class="hlasovll">a</label></p><br>
+            <p>
+              <button type="button" id="proo" class="butons">Load</button>
+              Proti: 
+              <input type="number"  id="proti" class="hlasov">
+              <label id="llproti" class="hlasovll">a</label>
+            </p><br>
             <label id="lproti" class="hlasovl">a</label><br>
             <label id="lllproti" class="hlasovlll">a</label></div>
           <div class="float-child1">
-            <p><button type="button" id="proo" class="butons">Load</button>  Zdrzeni:  <input type="number" id="zdrzeni" class="hlasov"><label id="llzdrzeni" class="hlasovll">a</label></p><br>
+            <p>
+              <button type="button" id="proo" class="butons">Load</button>
+              Zdrzeni:  
+              <input type="number" id="zdrzeni" class="hlasov">
+              <label id="llzdrzeni" class="hlasovll">a</label>
+            </p><br>
             <label id="lzdrzeni" class="hlasovl">a</label><br>
             <label id="lllzdrzeni" class="hlasovlll">a</label></div>
           <div class="float-child" id="tpro" name="hlasovt"></div>
           <div class="float-child" id="tproti" name="hlasovt"></div>
           <div class="float-child" id="tzdrzeni" name="hlasovt"></div>
         </div>
+        <label id="z1" class="zastupy">NaN</label>
+        <select name="cars" id="z1">
+          <option value="Pro">Pro</option>
+          <option value="Proti">Proti</option>
+          <option value="Zdrželi">Zdrželi</option>
+        </select>
         <button type="button" id="buttonX">Load</button>
         <script src="./JS_scripts/hlasovani.js"></script>
 

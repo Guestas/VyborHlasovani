@@ -71,7 +71,7 @@ function pridani(dataarr, labl, tex, key, val, hodn){
     cbv = parseInt(val)
     hlasovali = data_hlasovani[0]["pro"].concat(data_hlasovani[0]["proti"],data_hlasovani[0]["zdrzeni"])
     hl = ""
-    data_hlasovani[0]["pro"].includes(cbv) ? hl="v pro": data_hlasovani[0]["proti"].includes(cbv) ? hl="v proti": data_hlasovani[0]["zdrzeni"].includes(cbv)?hl="v zdrzeni":hl="nebyli"
+    data_hlasovani[0]["pro"].includes(cbv) ? hl="v pro": data_hlasovani[0]["proti"].includes(cbv) ? hl="v proti": data_hlasovani[0]["zdrzeni"].includes(cbv) ? hl="v zdrzeni":hl="nebyli"
     console.log(hl)
     if (cbv <= 126 && cbv > 0 && pritomni.includes(cbv)){
       if (key === "a" || key === "Enter" && !hlasovali.includes(cbv)) {
@@ -107,7 +107,7 @@ function pridani(dataarr, labl, tex, key, val, hodn){
       p1 = getNamesHlas(dataarr)
       tex.innerText = p1[0]
       tex.scrollTop = tex.scrollHeight;
-      console.log(p1[1])
+      //console.log(p1[1])
       hodn.innerText = "Přítomných:"+p1[1]+"/"+usnasenipritomnych+"="+Math.round(p1[1]/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+p1[1]+"/"+usnasenisch+"="+Math.round(p1[1]/usnasenisch*10000,4)/100+"%"
     }
     else{
@@ -138,8 +138,39 @@ document.querySelectorAll('.hlasov').forEach(item => {
     if (event.key == "a" || event.key == "Enter" || event.key == "d"){
       pridani(data_hlasovani[0][item.id], hlasll[0]["ll"+item.id], hlast[0]["t"+item.id], event.key, item.value, hlaslll[0]["lll"+item.id],)
       item.value=""
-      console.log(data_hlasovani)
+      console.log(data_hlasovani, pritomni)
       //data array, label, textbox, key, value
     }
   })
 })
+
+
+
+const optionsData = [
+  { value: 'Pro', label: 'Pro' },
+  { value: 'Proti', label: 'Proti' },
+  { value: 'Zdrželi', label: 'Zdrželi' }
+];
+
+// Get a reference to the target div
+const hlasovaniDiv = document.getElementById('zastupyHlas');
+
+// Create a label element
+const labelElement = document.createElement('label');
+labelElement.textContent = 'NaN';
+labelElement.className = 'zastupy';
+hlasovaniDiv.appendChild(labelElement);
+
+// Create a select element
+const selectElement = document.createElement('select');
+selectElement.name = 'Zastup hlas';
+selectElement.id = 'z1';
+hlasovaniDiv.appendChild(selectElement);
+
+// Populate the select element with options
+optionsData.forEach(option => {
+  const optionElement = document.createElement('option');
+  optionElement.value = option.value;
+  optionElement.textContent = option.label;
+  selectElement.appendChild(optionElement);
+});
