@@ -104,7 +104,6 @@ window.api.send("toMain_jslo")
   )
 
   window.api.receive_cmd("fromMain_showhide", (show) => {
-        //zab.forEach(element => {che.push(element.checked)})
         ppk=pritomni.filter(item => !zastoupeni1.concat(zastoupeni2,zastoupeni3,zastoupeni4,zastoupeni5).includes(item))
         window.api.send("toMain_pritomni",[ppk, zastoupeni1, zastoupeni2, zastoupeni3, zastoupeni4, zastoupeni5, che])
   });
