@@ -91,6 +91,12 @@ window.api.send("toMain_jslo")
         i++
       });
 
+      i=0
+      document.querySelectorAll('.zastupy').forEach(item => {
+        item.innerText = zastupy[i]
+        i++
+      })
+
       uzivatelevypis.innerText = jsonToTxt(bytyInfo)
       uzivateleprit.innerText = getNames(pritomni)
       uzivateleprit.scrollTop = uzivateleprit.scrollHeight;

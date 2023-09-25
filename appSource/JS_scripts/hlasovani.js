@@ -29,7 +29,6 @@ document.querySelectorAll('.hlasovlll').forEach(item => {
 
 
 function updateValues(){
-  zh.forEach(x=>console.log(x.value, zastoupeni[x.id[1]-1]))
   p1 = getNamesHlas(data_hlasovani[0]["pro"])[1]
   p2 = getNamesHlas(data_hlasovani[0]["proti"])[1]
   p3 = getNamesHlas(data_hlasovani[0]["zdrzeni"])[1]
@@ -47,18 +46,35 @@ function updateValues(){
   hlaslll[0]["lllpro"].innerText = "Přítomných:"+p1+"/"+usnasenipritomnych+"="+Math.round(p1/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+p1+"/"+usnasenisch+"="+Math.round(p1/usnasenisch*10000,4)/100+"%"
   hlaslll[0]["lllproti"].innerText = "Přítomných:"+p2+"/"+usnasenipritomnych+"="+Math.round(p2/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+p2+"/"+usnasenisch+"="+Math.round(p2/usnasenisch*10000,4)/100+"%"
   hlaslll[0]["lllzdrzeni"].innerText = "Přítomných:"+p3+"/"+usnasenipritomnych+"="+Math.round(p3/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+p3+"/"+usnasenisch+"="+Math.round(p3/usnasenisch*10000,4)/100+"%"
+  s = getCurrentDateTime()+"\n\n Pritomni\n"
+  s += getNames(pritomni)+"\n\n"
+  s += "Pro\n"+hlaslll[0]["lllpro"].innerText+"\n"+hlast[0]["tpro"].innerText+"\nProti\n"+hlaslll[0]["lllproti"].innerText+"\n"+hlast[0]["tproti"].innerText+"\nZdrzeni\n"+hlaslll[0]["lllzdrzeni"].innerText+"\n"+hlast[0]["tzdrzeni"].innerText
+  s += "\nZástupy hlasování: \n"
+  zh.forEach(z=>s += "\nZastupuje: "+zastupy[z.id[1]-1]+" má hodnotu: " + zastoupeni[z.id[1]-1]+" a je: "+z.value)
+  
+  return s
 }
+
+function getCurrentDateTime() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+  const day = String(now.getDate()).padStart(2, '0');
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+
+  return `${year}/${month}/${day} ${hours}:${minutes}:${seconds}`;
+}
+
+const formattedDateTime = getCurrentDateTime();
+console.log(formattedDateTime);
+
 
 document.querySelectorAll('[name="hlasovt"]').forEach(item => {
   hlast[0][item.id] = item
 })
 
-
-i=0
-document.querySelectorAll('.zastupy').forEach(item => {
-  item.innerText = zastupy[i]
-  i++
-})
 
 var zh = []// class="lab"
 document.querySelectorAll('[name="combo"]').forEach(item =>{
@@ -85,9 +101,7 @@ document.querySelectorAll('.dell').forEach(item =>{
     
     updateValues()
     console.log(getNamesHlas(data_hlasovani[0]["pro"]),getNamesHlas(data_hlasovani[0]["proti"]),getNamesHlas(data_hlasovani[0]["zdrzeni"]))
-    //hodn.innerText = "Přítomných:"+p1[1]+"/"+usnasenipritomnych+"="+Math.round(p1[1]/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+p1[1]+"/"+usnasenisch+"="+Math.round(p1[1]/usnasenisch*10000,4)/100+"%"
-    //hlaslll[0]["lllpro"].innerText = "Přítomných:"+0+"/"+usnasenipritomnych+"="+Math.round(0/usnasenipritomnych*10000,4)/100+"%  \n Celku: "+0+"/"+usnasenisch+"="+Math.round(0/usnasenisch*10000,4)/100+"%"
-  
+    
   })
 })
 
@@ -97,7 +111,8 @@ document.querySelectorAll('.dell').forEach(item =>{
 const butte = document.getElementById('buttonX')
 
 butte.addEventListener('click', function(event) {
-  updateValues()
+  console.log(updateValues())
+  window.api.send("toMain_savevote",updateValues())
 })
 
 /* 
@@ -108,6 +123,8 @@ butte.addEventListener('click', function(event) {
 
 pritomnia = []
 window.api.receive_cmd("fromMain_pritomni", (data) => {pritomnia = data});
+
+
 
 /* 
 

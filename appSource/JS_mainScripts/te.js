@@ -6,7 +6,7 @@ const f1 = (a,b) => {
 
   pritomni = []
   fileName = path.join(__dirname, '..', 'appData/data.json')
-  //console.log(fileName)
+  console.log(fileName)
   uzivatele = ""
   fs.readFile(fileName, (err, jsonString) => {
     if (err) {
@@ -20,14 +20,10 @@ const f1 = (a,b) => {
     {
       uzivatele=jsonString
     }
-    
+    console.log(uzivatele, jsonString)
   });
-
+  
   return uzivatele
 }
-
-
-  
-
 
 module.exports = {f1}

@@ -9,7 +9,7 @@ contextBridge.exposeInMainWorld("api", {
     openFile: () => ipcRenderer.invoke('openFiledial'),  //open dialog file
     send: (channel, data) => {  //render to main activate fnc in main with data from face
         // whitelist channels
-        let validChannels = ["toMain_jslo","toMain_pritomni"];
+        let validChannels = ["toMain_jslo","toMain_pritomni", "toMain_savevote"];
         if (validChannels.includes(channel)) {
             ipcRenderer.send(channel, data);
             console.log(channel, " send")//transfer log

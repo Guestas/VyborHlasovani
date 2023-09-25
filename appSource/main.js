@@ -36,10 +36,29 @@ async function handleFileOpen() {
     }).catch(err => {
       console.log(err)
   }); 
-    return filePaths[0]
   }
 }
 
+async function handleFileSave(data) {
+  try {
+    const { canceled, filePath } = await dialog.showSaveDialog(mainWindow, {
+      defaultPath: 'my-file.txt', // Default file name and extension
+      filters: [{ name: 'Text Files', extensions: ['txt'] }] // File filters
+    });
+  
+    if (!canceled) {
+      fs.writeFile(filePath, data, (error) => {
+        if (error) {
+          console.error('Error saving the file:', error);
+        } else {
+          console.log('File saved successfully:', filePath);
+        }
+      });
+    }
+  } catch (error) {
+    console.error('Error in save-file handler:', error);
+  }
+}
 
 function createWindow () {
   mainWindow = new BrowserWindow({
@@ -166,7 +185,7 @@ const { f1 } = require("./JS_mainScripts/te.js");
 
 //načítání aplikace a poté spuštění funkcí které si volá render proces
 app.whenReady().then(() => {
-  console.log(f1(1,1));
+  //console.log(f1(1,1));
   pritomni = []
   fileName = path.join(__dirname, 'appData/data.json')
   
@@ -188,6 +207,10 @@ app.whenReady().then(() => {
   ipcMain.on('toMain_pritomni', (event, args) => {
     pritomni = args
     mainWindow.webContents.send("fromMain_pritomni", pritomni);
+  });
+
+  ipcMain.on('toMain_savevote', (event, args) => {
+    handleFileSave(args)
   });
 
   createWindow()  //otevře okno
