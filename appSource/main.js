@@ -187,7 +187,12 @@ const { f1 } = require("./JS_mainScripts/te.js");
 app.whenReady().then(() => {
   //console.log(f1(1,1));
   pritomni = []
-  fileName = path.join(__dirname, 'appData/data.json')
+  fileName = path.join(__dirname, 'appData/datahl.json')
+  if(fs.existsSync(fileName)){
+    console.log('The file exists');
+  }else{
+    fileName = path.join(__dirname, 'appData/data.json')
+  }
   
 //načte json pro úpravu dat nebo vytvoří soubor json
   ipcMain.on('toMain_jslo', (event, args) => {
